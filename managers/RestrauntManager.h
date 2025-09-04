@@ -25,7 +25,7 @@ class RestaurantManager {
         void addRestraunt(Restaurant* r) {
             restraunts.push_back(r);
         }
-        vector<Restaurant*> seacrchByLocation(string loc){
+        vector<Restaurant*> searchByLocation(string loc){
             vector<Restaurant*> result;
             transform(loc.begin(), loc.end(), loc.begin(), :: tolower);
             for(auto r : restraunts) {
