@@ -1,4 +1,4 @@
-# Zoto 🍽️
+# Zoto 
 
 Zoto is a Zomato-inspired food ordering system built in C++. It simulates a real-world ordering experience with support for both pickup and delivery orders, multiple payment methods, and a clean modular codebase designed around well-known software design patterns.
 
@@ -41,14 +41,3 @@ g++ -std=c++17 -o zoto main.cpp
 
 Zoto is built around three core design patterns. The **Strategy Pattern** powers the payment system, allowing payment methods to be swapped at runtime without changing the order logic. The **Factory Pattern** is used to instantiate different order types cleanly without exposing construction details. The **Manager Pattern** centralizes the lifecycle of orders, keeping business logic out of models and main entry points.
 
----
-
-## Contributing
-
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
----
-
-## License
-
-[MIT](LICENSE)
