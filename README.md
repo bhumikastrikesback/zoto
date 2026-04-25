@@ -10,6 +10,38 @@ Zoto was built to demonstrate how large C++ applications can be structured clean
 
 ---
 
+## Project structure 
+~~~
+├── factories
+│   ├── NowOrderFactory.h
+│   ├── OrderFactory.h
+│   └── ScheduledFactory.h
+├── main.cpp
+├── managers
+│   ├── OrderManager.h
+│   └── RestrauntManager.h
+├── models
+│   ├── Cart.h
+│   ├── DeliveryOrder.h
+│   ├── MenuItem.h
+│   ├── Order.h
+│   ├── PickupOrder.h
+│   ├── Restaurant.h
+│   └── User.h
+├── rum
+├── services
+│   └── NotificationService.h
+├── strategies
+│   ├── CreditCardPaymentStrategy.h
+│   ├── PaymentStrategy.h
+│   └── UpiPaymentStrategy.h
+├── Utils
+│   └── TimeUtils.h
+└── Zoto.h
+~~~
+
+---
+
 ## Features
 
 **Modular Architecture** — The codebase is organized into distinct layers, each with a single responsibility. Models define data, factories create objects, managers handle business logic, and services handle side effects like notifications.
